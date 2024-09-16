@@ -1,0 +1,1 @@
+# kgiWedTemplate 凱證活動頁template
