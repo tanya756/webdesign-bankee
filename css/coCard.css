@@ -1337,7 +1337,7 @@ header a img {
 }
 @media (max-width: 768px) {
   .method details {
-    width: 90%;
+    width: 95%;
   }
   .method details summary {
     font-size: 1.75rem;
