@@ -315,14 +315,12 @@ header {
 			list-style-type: none;
 			padding-left: 0;
 			line-height: 1.5;
+			width: 100%;
 			li {
 				margin-bottom: 0.5rem;
 				position: relative;
 				font-size: 1.125rem;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				word-wrap: normal;
+				width: 100%;
 			}
 		}
 	}
