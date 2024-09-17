@@ -43,7 +43,6 @@
             </noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-
         <div id="coCard">
             <!-- header -->
             <header>
@@ -62,7 +61,7 @@
                         <h1 data-aos="fade-down">BOSS企業卡</h1>
                         <p>商務支付的數位轉型</p>
                         <p class="highlight">"無所不刷 不用再轉帳"</p>
-                        <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer">
+                        <a href="#line" class="cta_button" target="_blank" rel="noopener noreferrer">
                             限時 <span>2</span>%回饋
                         </a>
                     </div>
@@ -102,7 +101,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer">
+                    <a href="#line" class="cta_button" target="_blank" rel="noopener noreferrer">
                         限時達標享 <span>2</span>%回饋
                     </a>
                     <img src="images/intro_bg01.png" alt="" class="intro_bg01">
@@ -133,7 +132,7 @@
                                 <li>分三/六期分期輕鬆付</li>
                                 <li>帳務查詢一目了然</li>
                             </ul>
-                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer">
+                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer" style="display: none;">
                                 瞭解詳情
                             </a>
                         </div>
@@ -205,7 +204,7 @@
                                 <li>交易後 即時追蹤有效率</li>
                                 <li>雙重核准 安全加倍</li>
                             </ul>
-                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer">
+                            <a href="#" class="cta_button" target="_blank" rel="noopener noreferrer" style="display: none;">
                                 瞭解詳情
                             </a>
                         </div>
@@ -285,10 +284,12 @@
                                國外消費<span> 2%</span> 刷卡金回饋</p>
                         </div>
                     </div>
-                    <a href="#method" class="slip"> 詳細辦法請見注意事項<span class="arrow">&#9660;</span></a>
+                    <a href="#method" class="slip" id="showMethod"> 
+                        詳細辦法請見注意事項<span class="arrow">&#5167;</span>
+                    </a>
                </section>
 
-               <section class="line">
+               <section class="line" id="line">
                     <div class="line_content">
                         <div class="cellphone">
                             <img src="images/line_cellphone.png" alt="">
@@ -298,15 +299,16 @@
                             <p>@bankee_boss_card</p>
                         </div>
                         <div class="text">
+                            <h3>申辦Boss卡</h3>
                             <p>深入了解產品、申辦及使用相關問題LINE 官方帳號隨時解答！</p>
-                            <a href="" class="cta_button" target="_blank" rel="noopener noreferrer">加入LINE官方帳號 〉</a>
+                            <a href="https://lin.ee/XbkvH3Y" class="cta_button" target="_blank" rel="noopener noreferrer">加入LINE官方帳號 〉</a>
                         </div>
                         
                     </div>
                </section>
 
                 <section class="method frame" id="method">
-                    <details>
+                    <details id="methodDetails">
                         <summary>詳細辦法請見注意事項 </summary>
                         <div class="content">
                             <h2>活動辦法</h2>
@@ -340,31 +342,80 @@
                         </div>
                     </details>
                 </section>
+
+                <div class="share">
+                    <a href="https://lin.ee/XbkvH3Y" target="_blank" rel="noopener noreferrer">
+                        <img src="images/shareline.png" alt="shareline">
+                    </a>
+                </div>
                
             </article>
         </div>
-
 
         <!-- footer -->
         <div id="warning" class="warning"></div>
         <footer id="footer" class="footer"></footer>
 
-         <!-- 在 body 結束標籤之前引入 AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+         <!-- aos -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
-    <!-- 初始化 AOS -->
-    <script>
-        AOS.init({
-            // 這裡可以添加配置選項
-            offset: 120, // 偏移量（可選）
-            delay: 0, // 延遲（可選）
-            duration: 1000, // 持續時間（可選）
-            easing: 'ease', // 緩動函數（可選）
-            once: false, // 動畫是否只跑一次（可選）
-            mirror: false, // 滾動時是否鏡像動畫（可選）
-            anchorPlacement: 'top-bottom', // 錨點位置（可選）
+        <!-- 初始化 AOS -->
+        <script>
+            AOS.init({
+                // 這裡可以添加配置選項
+                offset: 120, // 偏移量（可選）
+                delay: 0, // 延遲（可選）
+                duration: 1000, // 持續時間（可選）
+                easing: 'ease', // 緩動函數（可選）
+                once: false, // 動畫是否只跑一次（可選）
+                mirror: false, // 滾動時是否鏡像動畫（可選）
+                anchorPlacement: 'top-bottom', // 錨點位置（可選）
+            });
+        </script>
+
+        <!-- 滾動&展開 -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const link = document.getElementById('showMethod');
+                const details = document.getElementById('methodDetails');
+                
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // 阻止默認的錨點行為
+                    
+                    // 滾動到 #method 位置
+                    document.querySelector('#method').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // 短暫延遲後打開 details
+                    setTimeout(() => {
+                        details.open = true;
+                    }, 500); // 500毫秒後打開
+                });
+            });
+        </script>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const details = document.getElementById('methodDetails');
+        const summary = details.querySelector('summary');
+
+        summary.addEventListener('click', function(e) {
+            e.preventDefault(); // 防止默認的切換行為
+            if (details.open) {
+                details.classList.add('closing');
+                setTimeout(() => {
+                    details.open = false;
+                    details.classList.remove('closing');
+                }, 300); // 與 CSS 過渡時間匹配
+            } else {
+                details.open = true;
+            }
         });
-    </script>
+    });
+</script>
 
     </body>
 </html>
