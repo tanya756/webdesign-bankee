@@ -389,6 +389,7 @@ header a img {
     border-bottom: 0px solid #c1b4ab;
     left: 1.5rem;
     bottom: -100px;
+    width: 0;
   }
   .intro_info_left::after {
     content: none;
@@ -402,9 +403,16 @@ header a img {
     bottom: 190px;
     left: -5rem;
     border-bottom: 0px solid #c1b4ab;
+    width: 0;
   }
   .intro_info_right::after {
     content: none;
+  }
+  .intro_bg01 {
+    width: 100%;
+  }
+  .intro_bg02 {
+    width: 100%;
   }
 }
 
