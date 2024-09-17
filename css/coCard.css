@@ -399,9 +399,8 @@ header a img {
     margin-left: 0;
   }
   .intro_info_right::before {
-    height: 100px;
-    bottom: 190px;
-    left: -5rem;
+    height: 80px;
+    bottom: 170px;
     border-bottom: 0px solid #c1b4ab;
     width: 0;
   }
