@@ -10,7 +10,7 @@ html {
   font-size: 16px; /* 桌面版基準字體大小 */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 14px;
   }
@@ -252,6 +252,7 @@ header a img {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 1024px;
+  padding: 0 20px;
   z-index: 1;
   position: relative;
 }
@@ -295,10 +296,10 @@ header a img {
 .intro_info_right::before {
   content: "";
   position: absolute;
-  width: 300px;
+  width: 280px;
   height: 120px;
   bottom: -120px;
-  left: 1.25rem;
+  right: 3rem;
   border-right: 1px solid #c1b4ab;
   border-bottom: 1px solid #c1b4ab;
   background-color: rgba(0, 0, 0, 0);
@@ -311,7 +312,7 @@ header a img {
   border-radius: 50%;
   background-color: rgb(155, 152, 148);
   bottom: -125px;
-  left: 20px;
+  right: 320px;
 }
 .intro_info_title {
   font-size: 1.5rem;
@@ -585,6 +586,14 @@ header a img {
   font-size: 12px;
   font-weight: bold;
 }
+@media (max-width: 1024px) {
+  .card01 .card01_info h2 .platform img, .card02 .card01_info h2 .platform img {
+    width: 150px;
+  }
+  .card01 .card02_info h2 .platform img, .card02 .card02_info h2 .platform img {
+    width: 80px;
+  }
+}
 @media (max-width: 768px) {
   .card01_content, .card02_content {
     -webkit-box-orient: vertical;
@@ -612,9 +621,6 @@ header a img {
   .card01 .example .checkbox-container, .card02 .example .checkbox-container {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-  }
-  .card01 .card01_info h2 .platform img, .card01 .card02_info h2 .platform img, .card02 .card01_info h2 .platform img, .card02 .card02_info h2 .platform img {
-    width: 150px;
   }
 }
 
@@ -644,13 +650,13 @@ header a img {
   max-width: 100px;
 }
 
-.card02 .step {
+.card02_info .step {
   border: 5px solid #ab886d;
   width: 1024px;
   margin: 6.25rem auto;
   position: relative;
 }
-.card02 .step-step01 {
+.card02_info .step-step01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,7 +665,7 @@ header a img {
           align-items: center;
   position: relative;
 }
-.card02 .step-step01 .text {
+.card02_info .step-step01 .text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -667,14 +673,14 @@ header a img {
   color: #ab886d;
   line-height: 1.6;
 }
-.card02 .step-step01 .pic {
+.card02_info .step-step01 .pic {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   position: relative;
   margin-top: 67px;
 }
-.card02 .step-step01 .pic::before {
+.card02_info .step-step01 .pic::before {
   content: "財務人員";
   background-color: #ab886d;
   color: #fff;
@@ -687,7 +693,7 @@ header a img {
   right: 15%;
   z-index: 1;
 }
-.card02 .step-step01 .speak {
+.card02_info .step-step01 .speak {
   position: relative;
   background-color: #ffeccb;
   border: 2px solid #ab886d;
@@ -704,7 +710,7 @@ header a img {
   line-height: 1.6;
   font-size: 0.875rem;
 }
-.card02 .step-step01 .speak::before {
+.card02_info .step-step01 .speak::before {
   content: "+";
   position: absolute;
   left: 10px;
@@ -727,7 +733,7 @@ header a img {
           align-items: center;
   font-size: 35px;
 }
-.card02 .step-step01 .speak::after {
+.card02_info .step-step01 .speak::after {
   content: "";
   position: absolute;
   bottom: -10px; /* 调整尖角位置 */
@@ -738,15 +744,15 @@ header a img {
   border-right: 10px solid transparent;
   border-top: 10px solid #ab886d;
 }
-.card02 .step-step01 .speak02 {
+.card02_info .step-step01 .speak02 {
   top: -50px;
   right: 100px;
 }
-.card02 .step-step01 .speak03 {
+.card02_info .step-step01 .speak03 {
   top: 80px;
   right: 195px;
 }
-.card02 .step-step01 .arrow01::before, .card02 .step-step01 .arrow01::after, .card02 .step-step01 .arrow02::before, .card02 .step-step01 .arrow02::after {
+.card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
   content: "";
   position: absolute;
   width: 100px;
@@ -765,29 +771,29 @@ header a img {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02 .step-step01 .arrow01::after, .card02 .step-step01 .arrow02::after {
+.card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::after {
   top: 300px;
   left: 180px;
   border: 10px solid #ab886d;
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02 .step-step01 .arrow02::before {
+.card02_info .step-step01 .arrow02::before {
   top: 300px;
   border-radius: 50px;
 }
-.card02 .step-step01 .arrow02::after {
+.card02_info .step-step01 .arrow02::after {
   top: 340px;
   border: 10px solid #ab886d;
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02 .step-step02 .pic::before {
+.card02_info .step-step02 .pic::before {
   content: "業務人員";
   top: 70%;
   right: 45%;
 }
-.card02 .step-step02 .pic::before::before, .card02 .step-step02 .pic::before::after {
+.card02_info .step-step02 .pic::before::before, .card02_info .step-step02 .pic::before::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -798,14 +804,14 @@ header a img {
           transform: rotate(45deg);
   z-index: 2;
 }
-.card02 .step-step02 .pic::before::before {
+.card02_info .step-step02 .pic::before::before {
   border: 20px solid #ffeccb;
   border-top-color: transparent;
   border-left-color: transparent;
   top: 230px;
   left: 40px;
 }
-.card02 .step-step02 .pic::before::after {
+.card02_info .step-step02 .pic::before::after {
   top: 255px;
   left: 55px;
   width: 90px;
@@ -814,7 +820,7 @@ header a img {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02 .step .cover {
+.card02_info .step .cover {
   border-top: 5px solid #ab886d;
   border-bottom: 5px solid #ab886d;
   border-left: 5px solid #ffeccb;
@@ -830,106 +836,116 @@ header a img {
   background-color: #ffeccb;
 }
 @media (max-width: 1024px) {
-  .card02 .step {
+  .card02_info {
     width: 100%;
   }
-  .card02 .step-step01 .text {
+  .card02_info .step {
+    width: 90%;
+  }
+  .card02_info .step-step01 .text {
     width: 50%;
   }
-  .card02 .step-step01 .pic {
+  .card02_info .step-step01 .pic {
     width: 50%;
   }
-  .card02 .step-step01 .pic img {
-    width: 100%;
+  .card02_info .step-step01 .pic img {
+    width: 85%;
   }
-  .card02 .step-step01 .arrow01::before, .card02 .step-step01 .arrow01::after, .card02 .step-step01 .arrow02::before, .card02 .step-step01 .arrow02::after {
+  .card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
     top: 200px;
     left: 70px;
   }
-  .card02 .step-step01 .arrow01::after, .card02 .step-step01 .arrow02::after {
+  .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::after {
     top: 250px;
     left: 100px;
   }
-  .card02 .step-step01 .arrow02::before {
+  .card02_info .step-step01 .arrow02::before {
     top: 250px;
   }
-  .card02 .step-step01 .arrow02::after {
+  .card02_info .step-step01 .arrow02::after {
     top: 290px;
   }
 }
+@media (max-width: 900px) {
+  .card02_info .step-step01 .speak03 {
+    top: 60px;
+    right: 115px;
+  }
+}
 @media (max-width: 768px) {
-  .card02 .step {
+  .card02_info .step {
     width: 90%;
     padding: 20px 0;
     margin: 1rem auto;
   }
-  .card02 .step-step01 {
+  .card02_info .step-step01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .card02 .step-step01 .text {
+  .card02_info .step-step01 .text {
     width: 100%;
     margin-bottom: 100px;
   }
-  .card02 .step-step01 .pic {
+  .card02_info .step-step01 .pic {
     width: 100%;
   }
-  .card02 .step-step01 .pic img {
+  .card02_info .step-step01 .pic img {
     width: 80%;
     margin: 50px 0;
   }
-  .card02 .step-step01 .speak {
+  .card02_info .step-step01 .speak {
     top: 100px;
     right: 100px;
     width: 230px;
   }
-  .card02 .step-step01 .speak02 {
+  .card02_info .step-step01 .speak02 {
     top: 180px;
     right: 10px;
   }
-  .card02 .step-step01 .speak03 {
+  .card02_info .step-step01 .speak03 {
     top: 260px;
     right: 130px;
   }
-  .card02 .step-step01 .arrow01::before, .card02 .step-step01 .arrow01::after, .card02 .step-step01 .arrow02::before, .card02 .step-step01 .arrow02::after {
+  .card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
     top: 500px;
     left: calc(50% - 90px);
   }
-  .card02 .step-step01 .arrow01::before {
+  .card02_info .step-step01 .arrow01::before {
     border-radius: 50px;
   }
-  .card02 .step-step01 .arrow01::after, .card02 .step-step01 .arrow02::after {
+  .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::after {
     top: 530px;
     left: calc(50% - 45px);
   }
-  .card02 .step-step01 .arrow02::before {
+  .card02_info .step-step01 .arrow02::before {
     top: 530px;
   }
-  .card02 .step-step01 .arrow02::after {
+  .card02_info .step-step01 .arrow02::after {
     top: 570px;
   }
-  .card02 .step-step02 {
+  .card02_info .step-step02 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .card02 .step-step02 .text {
+  .card02_info .step-step02 .text {
     margin-bottom: 0px;
     margin-top: 150px;
   }
-  .card02 .step-step02 .pic {
+  .card02_info .step-step02 .pic {
     margin-top: 0;
   }
-  .card02 .step-step02 .pic img {
+  .card02_info .step-step02 .pic img {
     margin: 0;
     width: 70%;
   }
-  .card02 .step .cover {
+  .card02_info .step .cover {
     left: -15px;
     width: calc(100% + 30px);
+    top: 57%;
   }
 }
 
@@ -1139,6 +1155,10 @@ header a img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.line .text h3 {
+  font-size: 2rem;
+  color: #000;
+}
 .line .text p {
   color: #000;
   font-size: 1.125rem;
@@ -1152,6 +1172,19 @@ header a img {
 .line .text a:hover.cta_button {
   background: -webkit-gradient(linear, left bottom, left top, from(#075c0c), to(#5fbb63));
   background: linear-gradient(to top, #075c0c, #5fbb63);
+}
+@media (max-width: 1200px) {
+  .line_content {
+    width: 90%;
+    gap: 30px;
+    margin: auto;
+  }
+  .line .cellphone img {
+    width: 100%;
+  }
+  .line .QRcode img {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .line_content {
@@ -1174,8 +1207,14 @@ header a img {
     margin: auto;
     display: block;
   }
+  .line .text {
+    margin-top: 50px;
+  }
 }
 
+.method {
+  margin: 20px;
+}
 .method details {
   border-radius: 4px;
   margin-bottom: 20px;
@@ -1186,42 +1225,54 @@ header a img {
 .method details summary {
   padding: 10px;
   cursor: pointer;
-  color: #7b34c6;
+  color: #ab886d;
   font-weight: bold;
   list-style: none;
   position: relative;
   font-size: 2.25rem;
   text-align: center;
-  color: #ab886d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .method details summary::-webkit-details-marker {
   display: none;
 }
 .method details summary::after {
-  content: "▼";
-  font-size: 0.8em;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-left: 10px;
+  content: "";
+  border: solid #ab886d;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 7px;
+  margin-left: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.method details[open] summary::after {
-  content: "▲";
-  -webkit-transform: translateY(-50%) rotate(0deg);
-          transform: translateY(-50%) rotate(0deg);
-  top: calc(50% - 5px);
+.method details[open] > summary::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 .method .content {
   padding: 15px;
+  display: none;
 }
 .method .content h2 {
-  color: #7b34c6;
-  margin-top: 0;
   color: #ab886d;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 3px;
   border-bottom: 1px solid #ab886d;
   display: inline-block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 .method .content ul {
   padding-left: 20px;
@@ -1238,6 +1289,14 @@ header a img {
 .method .content ol li span {
   color: #7b34c6;
 }
+.method details[open] .content {
+  display: block;
+}
+@media (max-width: 1024px) {
+  .method details {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .method details {
     width: 90%;
@@ -1245,4 +1304,14 @@ header a img {
   .method details summary {
     font-size: 1.75rem;
   }
+}
+
+.share {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+.share a:hover {
+  opacity: 0.6;
 }
