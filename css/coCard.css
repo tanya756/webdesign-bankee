@@ -318,6 +318,10 @@ header a img {
   font-size: 1.5rem;
   color: #845228;
   margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
 .intro_info_title span {
   font-size: 1.125rem;
@@ -332,6 +336,10 @@ header a img {
   margin-bottom: 0.5rem;
   position: relative;
   font-size: 1.125rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
 .intro_cards {
   -webkit-box-flex: 2;
@@ -669,7 +677,7 @@ header a img {
   margin: 6.25rem auto;
   position: relative;
 }
-.card02_info .step-step01 {
+.card02_info .step_step01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,7 +686,7 @@ header a img {
           align-items: center;
   position: relative;
 }
-.card02_info .step-step01 .text {
+.card02_info .step_step01 .text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -686,14 +694,14 @@ header a img {
   color: #ab886d;
   line-height: 1.6;
 }
-.card02_info .step-step01 .pic {
+.card02_info .step_step01 .pic {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   position: relative;
   margin-top: 67px;
 }
-.card02_info .step-step01 .pic::before {
+.card02_info .step_step01 .pic::before {
   content: "財務人員";
   background-color: #ab886d;
   color: #fff;
@@ -706,7 +714,7 @@ header a img {
   right: 15%;
   z-index: 1;
 }
-.card02_info .step-step01 .speak {
+.card02_info .step_step01 .speak {
   position: relative;
   background-color: #ffeccb;
   border: 2px solid #ab886d;
@@ -723,7 +731,7 @@ header a img {
   line-height: 1.6;
   font-size: 0.875rem;
 }
-.card02_info .step-step01 .speak::before {
+.card02_info .step_step01 .speak::before {
   content: "+";
   position: absolute;
   left: 10px;
@@ -746,7 +754,7 @@ header a img {
           align-items: center;
   font-size: 35px;
 }
-.card02_info .step-step01 .speak::after {
+.card02_info .step_step01 .speak::after {
   content: "";
   position: absolute;
   bottom: -10px; /* 调整尖角位置 */
@@ -757,15 +765,15 @@ header a img {
   border-right: 10px solid transparent;
   border-top: 10px solid #ab886d;
 }
-.card02_info .step-step01 .speak02 {
+.card02_info .step_step01 .speak02 {
   top: -50px;
   right: 100px;
 }
-.card02_info .step-step01 .speak03 {
+.card02_info .step_step01 .speak03 {
   top: 80px;
   right: 195px;
 }
-.card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
+.card02_info .step_step01 .arrow01::before, .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::before, .card02_info .step_step01 .arrow02::after {
   content: "";
   position: absolute;
   width: 100px;
@@ -784,29 +792,29 @@ header a img {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::after {
+.card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::after {
   top: 300px;
   left: 180px;
   border: 10px solid #ab886d;
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02_info .step-step01 .arrow02::before {
+.card02_info .step_step01 .arrow02::before {
   top: 300px;
   border-radius: 50px;
 }
-.card02_info .step-step01 .arrow02::after {
+.card02_info .step_step01 .arrow02::after {
   top: 340px;
   border: 10px solid #ab886d;
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.card02_info .step-step02 .pic::before {
+.card02_info .step_step02 .pic::before {
   content: "業務人員";
   top: 70%;
   right: 45%;
 }
-.card02_info .step-step02 .pic::before::before, .card02_info .step-step02 .pic::before::after {
+.card02_info .step_step02 .pic::before::before, .card02_info .step_step02 .pic::before::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -817,14 +825,14 @@ header a img {
           transform: rotate(45deg);
   z-index: 2;
 }
-.card02_info .step-step02 .pic::before::before {
+.card02_info .step_step02 .pic::before::before {
   border: 20px solid #ffeccb;
   border-top-color: transparent;
   border-left-color: transparent;
   top: 230px;
   left: 40px;
 }
-.card02_info .step-step02 .pic::before::after {
+.card02_info .step_step02 .pic::before::after {
   top: 255px;
   left: 55px;
   width: 90px;
@@ -855,32 +863,32 @@ header a img {
   .card02_info .step {
     width: 90%;
   }
-  .card02_info .step-step01 .text {
+  .card02_info .step_step01 .text {
     width: 50%;
   }
-  .card02_info .step-step01 .pic {
+  .card02_info .step_step01 .pic {
     width: 50%;
   }
-  .card02_info .step-step01 .pic img {
+  .card02_info .step_step01 .pic img {
     width: 85%;
   }
-  .card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
+  .card02_info .step_step01 .arrow01::before, .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::before, .card02_info .step_step01 .arrow02::after {
     top: 200px;
     left: 70px;
   }
-  .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::after {
+  .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::after {
     top: 250px;
     left: 100px;
   }
-  .card02_info .step-step01 .arrow02::before {
+  .card02_info .step_step01 .arrow02::before {
     top: 250px;
   }
-  .card02_info .step-step01 .arrow02::after {
+  .card02_info .step_step01 .arrow02::after {
     top: 290px;
   }
 }
 @media (max-width: 900px) {
-  .card02_info .step-step01 .speak03 {
+  .card02_info .step_step01 .speak03 {
     top: 60px;
     right: 115px;
   }
@@ -894,67 +902,67 @@ header a img {
     padding: 20px 0;
     margin: 1rem auto;
   }
-  .card02_info .step-step01 {
+  .card02_info .step_step01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .card02_info .step-step01 .text {
+  .card02_info .step_step01 .text {
     width: 100%;
     margin-bottom: 100px;
   }
-  .card02_info .step-step01 .pic {
+  .card02_info .step_step01 .pic {
     width: 100%;
   }
-  .card02_info .step-step01 .pic img {
+  .card02_info .step_step01 .pic img {
     width: 80%;
     margin: 50px 0;
   }
-  .card02_info .step-step01 .speak {
+  .card02_info .step_step01 .speak {
     top: 100px;
     right: 100px;
     width: 230px;
   }
-  .card02_info .step-step01 .speak02 {
+  .card02_info .step_step01 .speak02 {
     top: 180px;
     right: 10px;
   }
-  .card02_info .step-step01 .speak03 {
+  .card02_info .step_step01 .speak03 {
     top: 260px;
     right: 110px;
   }
-  .card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
+  .card02_info .step_step01 .arrow01::before, .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::before, .card02_info .step_step01 .arrow02::after {
     top: 500px;
-    left: calc(50% - 90px);
+    left: calc(50% - 70px);
   }
-  .card02_info .step-step01 .arrow01::before {
+  .card02_info .step_step01 .arrow01::before {
     border-radius: 50px;
   }
-  .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::after {
+  .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::after {
     top: 530px;
     left: calc(50% - 45px);
   }
-  .card02_info .step-step01 .arrow02::before {
+  .card02_info .step_step01 .arrow02::before {
     top: 530px;
   }
-  .card02_info .step-step01 .arrow02::after {
+  .card02_info .step_step01 .arrow02::after {
     top: 570px;
   }
-  .card02_info .step-step02 {
+  .card02_info .step_step02 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .card02_info .step-step02 .text {
+  .card02_info .step_step02 .text {
     margin-bottom: 0px;
     margin-top: 150px;
   }
-  .card02_info .step-step02 .pic {
+  .card02_info .step_step02 .pic {
     margin-top: 0;
   }
-  .card02_info .step-step02 .pic img {
+  .card02_info .step_step02 .pic img {
     margin: 0;
     width: 70%;
   }
@@ -962,6 +970,23 @@ header a img {
     left: -15px;
     width: calc(100% + 30px);
     top: 57%;
+  }
+}
+@media (max-width: 400px) {
+  .card02_info .step_step01 .arrow01::before, .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::before, .card02_info .step_step01 .arrow02::after {
+    top: 470px;
+  }
+  .card02_info .step_step01 .arrow01::before {
+    border-radius: 50px;
+  }
+  .card02_info .step_step01 .arrow01::after, .card02_info .step_step01 .arrow02::after {
+    top: 500px;
+  }
+  .card02_info .step_step01 .arrow02::before {
+    top: 500px;
+  }
+  .card02_info .step_step01 .arrow02::after {
+    top: 540px;
   }
 }
 

@@ -302,12 +302,15 @@ header {
 			font-size: 1.5rem;
 			color: $secondary-deep-color;
 			margin-bottom: 1rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			word-wrap: normal;
 			span{
 				font-size: 1.125rem;
 				font-weight: 400;
 			}
 		}
-		
 		&_list {
 			list-style-type: none;
 			padding-left: 0;
@@ -316,6 +319,10 @@ header {
 				margin-bottom: 0.5rem;
 				position: relative;
 				font-size: 1.125rem;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				word-wrap: normal;
 			}
 		}
 	}
@@ -605,7 +612,7 @@ header {
 			margin: 6.25rem auto;
 			position: relative;
 		
-			&-step01{
+			&_step01{
 				display: flex;
 				align-items: center;
 				position: relative;
@@ -723,7 +730,7 @@ header {
 				}
 			}
 			
-			&-step02 .pic::before {
+			&_step02 .pic::before {
 				content: "業務人員";
 				top: 70%;
 				right: 45%;
@@ -781,7 +788,7 @@ header {
 			width: 100%;
 			.step{
 				width: 90%;	
-				&-step01{
+				&_step01{
 					.text{
 						width: 50%;
 					}
@@ -811,12 +818,11 @@ header {
 		}
 	}
 	@media (max-width: 900px){
-		&_info .step-step01 .speak03 {
+		&_info .step_step01 .speak03 {
 			top: 60px;
 			right: 115px;
 		}
 	}
-	
 	@media (max-width: 767px) {
 		background: linear-gradient(160deg, $white_color 30%, $secondary_light_light_light_color 30%);
 		&_info{
@@ -824,7 +830,7 @@ header {
 				width: 90%;	
 				padding: 20px 0;
 				margin: 1rem auto;
-				&-step01{
+				&_step01{
 					flex-direction: column;
 					.text{
 						width: 100%;
@@ -854,8 +860,7 @@ header {
 					// 箭頭
 					.arrow01::before,.arrow01::after,.arrow02::before,.arrow02::after {
 						top: 500px;
-						// left: 70px;
-						left: calc(50% - 90px);
+						left: calc(50% - 70px);
 					}
 					.arrow01::before{
 						border-radius: 50px;
@@ -871,7 +876,7 @@ header {
 						top: 570px;
 					}
 				}
-				&-step02{
+				&_step02{
 					flex-direction: column-reverse;
 					.text{
 						margin-bottom: 0px;
@@ -894,6 +899,26 @@ header {
 			}
 		}
 	}
+	@media (max-width: 400px) {
+		&_info .step_step01{
+			// 箭頭
+			.arrow01::before,.arrow01::after,.arrow02::before,.arrow02::after {
+				top: 470px;
+			}
+			.arrow01::before{
+				border-radius: 50px;
+			}
+			.arrow01::after,.arrow02::after{
+				top: 500px;
+			}
+			.arrow02::before {
+				top: 500px;
+			}
+			.arrow02::after{
+				top: 540px;
+			}
+		}
+	}	
 }
 
 .discount{
