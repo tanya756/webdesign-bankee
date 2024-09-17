@@ -232,7 +232,7 @@ header a img {
             flex-direction: column-reverse;
   }
   .kv_info {
-    padding: 50px;
+    padding: 50px 0;
   }
 }
 
@@ -563,7 +563,7 @@ header a img {
   grid-template-columns: repeat(3, 1fr);
   gap: 0px 10px;
   max-width: 600px;
-  margin: 20px;
+  margin: 20px 0;
 }
 .card01 .example .checkbox-item, .card02 .example .checkbox-item {
   display: -webkit-box;
@@ -616,8 +616,14 @@ header a img {
     max-width: 100%;
     margin-top: 0;
   }
+  .card01_info h2, .card02_info h2 {
+    gap: 10px;
+  }
   .card01_info h2 .bosscard, .card02_info h2 .bosscard {
     font-size: 1.75rem;
+  }
+  .card01_info h2 .platform .note02, .card02_info h2 .platform .note02 {
+    font-size: 1.25rem;
   }
   .card01_info ul, .card02_info ul {
     margin: 2rem auto;
@@ -879,7 +885,10 @@ header a img {
     right: 115px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .card02 {
+    background: linear-gradient(160deg, #fff 30%, #ffeccb 30%);
+  }
   .card02_info .step {
     width: 90%;
     padding: 20px 0;
@@ -913,7 +922,7 @@ header a img {
   }
   .card02_info .step-step01 .speak03 {
     top: 260px;
-    right: 130px;
+    right: 110px;
   }
   .card02_info .step-step01 .arrow01::before, .card02_info .step-step01 .arrow01::after, .card02_info .step-step01 .arrow02::before, .card02_info .step-step01 .arrow02::after {
     top: 500px;

@@ -219,7 +219,7 @@ header {
 	@media (max-width: 768px) {
 		flex-direction: column-reverse;
 		&_info {
-			padding: 50px;
+			padding: 50px 0;
 		}
 	}
 }
@@ -502,7 +502,7 @@ header {
             grid-template-columns: repeat(3, 1fr);
             gap: 0px 10px;
             max-width: 600px;
-			margin: 20px;
+			margin: 20px 0;
         }
         .checkbox-item {
             display: flex;
@@ -555,8 +555,14 @@ header {
 		}
 		&_info {
 			h2{
+				gap: 10px;
 				.bosscard{
 					font-size: 1.75rem;
+				}
+				.platform{
+					.note02{
+						font-size: 1.25rem;
+					}
 				}
 			}
 			ul{
@@ -770,7 +776,6 @@ header {
 		}
 	}
 
-
 	@media (max-width: 1024px) {
 		&_info{
 			width: 100%;
@@ -812,7 +817,8 @@ header {
 		}
 	}
 	
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
+		background: linear-gradient(160deg, $white_color 30%, $secondary_light_light_light_color 30%);
 		&_info{
 			.step{
 				width: 90%;	
@@ -843,7 +849,7 @@ header {
 					}
 					.speak03{
 						top: 260px;
-						right: 130px;
+						right: 110px;
 					}
 					// 箭頭
 					.arrow01::before,.arrow01::after,.arrow02::before,.arrow02::after {
