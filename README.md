@@ -1,1 +1,1 @@
-# kgiWedTemplate 凱證活動頁template
+# Bankee BOSS企業卡/數位企業卡 無所不刷 不用再轉帳
