@@ -1222,6 +1222,9 @@ header {
 	a:hover{
 		opacity: .6;
 	}
+	@media (max-width: 768px) {
+		right: 5px;
+	}
 }
 
 

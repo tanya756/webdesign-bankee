@@ -1353,3 +1353,8 @@ header a img {
 .share a:hover {
   opacity: 0.6;
 }
+@media (max-width: 768px) {
+  .share {
+    right: 5px;
+  }
+}
