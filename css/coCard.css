@@ -642,6 +642,15 @@ header a img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 550px) {
+  .card01_pic, .card02_pic {
+    overflow-x: hidden;
+  }
+  .card01_pic .w100, .card02_pic .w100 {
+    max-width: 140%;
+    margin-left: -20%;
+  }
+}
 
 .card02_info h2 .platform .note02 {
   display: inline-block;
