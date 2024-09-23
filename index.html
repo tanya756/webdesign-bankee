@@ -16,14 +16,14 @@
         <meta property="og:url" content="https://www.bankee.com.tw/event/coCard24Q4/index.html">
 
         <!-- css -->
-        <link rel="stylesheet" href="css/eventFooter.css">
+        <link rel="stylesheet" href="../../css/eventFooter.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/coCard.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- js -->
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/eventFooter.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/eventFooter.js"></script>
 
         <!-- Google Tag Manager -->
         <script>
@@ -278,8 +278,10 @@
                                 <img src="images/discount_circle02.png" alt="2%">
                             </div>
                             <h3>國內1%回饋 國外2%回饋</h3>
-                            <p><span>交易達檻享</span>國內消費1%及<br>
-                                國外消費 2% 刷卡金回饋<span>無上限</span>
+                            <p>
+                                消費達檻享國內消費<span>1%</span>及<br> 
+                                國外消費享<span>2%</span>刷卡金回饋<br>  
+                                另有國豐商行<span>加碼2%回饋</span>
                             </p>
                         </div>
                     </div>
@@ -356,7 +358,7 @@
         <footer id="footer" class="footer"></footer>
 
          <!-- aos -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="js/aos.js"></script>
     
         <!-- 初始化 AOS -->
         <script>
@@ -394,27 +396,26 @@
             });
         </script>
 
+        <!-- documen+summary -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const details = document.getElementById('methodDetails');
+                const summary = details.querySelector('summary');
 
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const details = document.getElementById('methodDetails');
-        const summary = details.querySelector('summary');
-
-        summary.addEventListener('click', function(e) {
-            e.preventDefault(); // 防止默認的切換行為
-            if (details.open) {
-                details.classList.add('closing');
-                setTimeout(() => {
-                    details.open = false;
-                    details.classList.remove('closing');
-                }, 300); // 與 CSS 過渡時間匹配
-            } else {
-                details.open = true;
-            }
-        });
-    });
-</script>
+                summary.addEventListener('click', function(e) {
+                    e.preventDefault(); // 防止默認的切換行為
+                    if (details.open) {
+                        details.classList.add('closing');
+                        setTimeout(() => {
+                            details.open = false;
+                            details.classList.remove('closing');
+                        }, 300); // 與 CSS 過渡時間匹配
+                    } else {
+                        details.open = true;
+                    }
+                });
+            });
+        </script>
 
     </body>
 </html>
