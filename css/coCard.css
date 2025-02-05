@@ -364,6 +364,8 @@ header a img {
   margin: auto;
   z-index: 1;
   position: relative;
+  width: 300px;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .intro_content {
@@ -435,6 +437,11 @@ header a img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+.card01 .tit_subtitle, .card02 .tit_subtitle {
+  width: 1024px;
+  margin: auto;
+  line-height: 1.6;
 }
 .card01_content, .card02_content {
   display: -webkit-box;
@@ -535,20 +542,16 @@ header a img {
   height: auto;
 }
 .card01 .cta_button, .card02 .cta_button {
-  background-color: #7b34c6;
-  color: #fff;
-  padding: 1rem 5rem;
-}
-.card01 a:hover.cta_button, .card02 a:hover.cta_button {
-  background: -webkit-gradient(linear, left bottom, left top, from(#491c78), to(#a161e3));
-  background: linear-gradient(to top, #491c78, #a161e3);
+  display: table;
+  margin: auto;
+  width: 300px;
+  text-align: center;
 }
 .card01 .example, .card02 .example {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 5rem;
   margin-bottom: 0;
 }
 .card01 .example h2 .bosscard, .card02 .example h2 .bosscard {
@@ -997,6 +1000,14 @@ header a img {
   }
 }
 
+.bgwhite {
+  background: linear-gradient(160deg, #fff 44%, #fff 44%);
+}
+
+.bgorange {
+  background: linear-gradient(160deg, #ffeccb 44%, #ffeccb 44%);
+}
+
 .discount {
   background-color: #7b34c6;
 }
@@ -1348,6 +1359,21 @@ header a img {
   }
   .method details summary {
     font-size: 1.75rem;
+  }
+}
+
+.apply {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 9999;
+}
+.apply a:hover {
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .apply {
+    right: 5px;
   }
 }
 

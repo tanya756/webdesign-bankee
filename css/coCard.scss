@@ -350,6 +350,8 @@ header {
 		margin: auto;
 		z-index: 1;
 		position: relative;
+		width: 300px;
+		text-align: center;
 	}
 	@media (max-width: 1024px) {
 		&_content {
@@ -416,6 +418,11 @@ header {
 	h1{
 		@include text-gradient($primary-color, $primary-color);
 	}
+	.tit_subtitle{
+		width: 1024px;
+		margin: auto;
+		line-height: 1.6;
+	}
 	&_content{
 		display: flex;
 		justify-content: space-between;
@@ -479,18 +486,22 @@ header {
 		}
 	}
 	.cta_button {
-		background-color: $primary_color;
-		color: $white_color;
-		padding: 1rem 5rem;
+		// background-color: $primary_color;
+		// color: $white_color;
+		// padding: 1rem 5rem;
+		display: table;
+    	margin: auto;
+		width: 300px;
+		text-align: center;
 	}
 	a:hover{
 		&.cta_button{
-			background: linear-gradient(to top, #491c78,#a161e3)
+			// background: linear-gradient(to top, #491c78,#a161e3)
 		}
 	}
 	.example{
 		flex-direction: column;
-		padding-top: 5rem;
+		// padding-top: 5rem;
 		margin-bottom: 0;
 		h2 .bosscard{
 			@include text-gradient02(#bf9d78, #a7795f);
@@ -921,6 +932,14 @@ header {
 	}	
 }
 
+.bgwhite{
+	background: linear-gradient(160deg, #fff 44%, #fff 44%);
+}
+
+.bgorange{
+	background: linear-gradient(160deg, #ffeccb 44%, #ffeccb 44%);
+}
+
 .discount{
 	background-color: $primary_color;
 	h1{
@@ -1212,6 +1231,19 @@ header {
             }
         }
     }
+}
+
+.apply{
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	z-index: 9999;
+	a:hover{
+		opacity: .6;
+	}
+	@media (max-width: 768px) {
+		right: 5px;
+	}
 }
 
 .share{
