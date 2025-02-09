@@ -443,6 +443,12 @@ header a img {
   margin: auto;
   line-height: 1.6;
 }
+.card01 .tit_subtitle a, .card02 .tit_subtitle a {
+  color: #845228;
+}
+.card01 .tit_subtitle a:hover, .card02 .tit_subtitle a:hover {
+  color: #ab886d;
+}
 .card01_content, .card02_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1344,6 +1350,12 @@ header a img {
 }
 .method .content ol li span {
   color: #7b34c6;
+}
+.method .content ol li a {
+  color: #845228;
+}
+.method .content ol li a:hover {
+  color: #ab886d;
 }
 .method details[open] .content {
   display: block;

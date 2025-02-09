@@ -422,6 +422,12 @@ header {
 		width: 1024px;
 		margin: auto;
 		line-height: 1.6;
+		a{
+			color: $secondary_deep_color;
+		}
+		a:hover{
+			color: $secondary_color;
+		}
 	}
 	&_content{
 		display: flex;
@@ -1197,7 +1203,6 @@ header {
             padding-left: 20px;
             line-height: 1.6;
             list-style-type: square;
-
             ol {
                 padding-left: 20px;
             }
@@ -1210,6 +1215,12 @@ header {
             li span {
                 color: $primary_color;
             }
+			li a{
+				color: $secondary_deep_color;
+			}
+			li a:hover{
+				color: $secondary_color;
+			}
         }
     }
 
