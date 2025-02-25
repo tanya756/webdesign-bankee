@@ -82,6 +82,9 @@ a:hover.cta_button {
   font-size: 1.5rem;
 }
 @media (max-width: 768px) {
+  .tit {
+    padding: 0 10px;
+  }
   .tit_maintitle {
     font-size: 2.5rem;
     margin-bottom: 0rem;
@@ -617,6 +620,9 @@ header a img {
   }
 }
 @media (max-width: 768px) {
+  .card01 .tit_subtitle, .card02 .tit_subtitle {
+    text-align: justify;
+  }
   .card01_content, .card02_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
