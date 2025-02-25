@@ -417,9 +417,10 @@ header {
 	background: linear-gradient(160deg, $white_color 44%, $secondary_light_light_light_color 44%);
 	h1{
 		@include text-gradient($primary-color, $primary-color);
+		line-height: 1.6;
 	}
 	.tit_subtitle{
-		width: 1024px;
+		// width: 1024px;
 		margin: auto;
 		line-height: 1.6;
 		a{

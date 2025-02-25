@@ -437,9 +437,9 @@ header a img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  line-height: 1.6;
 }
 .card01 .tit_subtitle, .card02 .tit_subtitle {
-  width: 1024px;
   margin: auto;
   line-height: 1.6;
 }
