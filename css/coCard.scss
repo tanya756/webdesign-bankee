@@ -422,7 +422,7 @@ header {
 		line-height: 1.6;
 	}
 	.tit_subtitle{
-		// width: 1024px;
+		width: 1024px;
 		margin: auto;
 		line-height: 1.6;
 		a{
@@ -560,6 +560,7 @@ header {
 	@media (max-width: 768px) {
 		.tit_subtitle{
 			text-align: justify;
+			width: 100%;
 		}
 		&_content {
 			flex-direction: column;		

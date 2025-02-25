@@ -443,6 +443,7 @@ header a img {
   line-height: 1.6;
 }
 .card01 .tit_subtitle, .card02 .tit_subtitle {
+  width: 1024px;
   margin: auto;
   line-height: 1.6;
 }
@@ -622,6 +623,7 @@ header a img {
 @media (max-width: 768px) {
   .card01 .tit_subtitle, .card02 .tit_subtitle {
     text-align: justify;
+    width: 100%;
   }
   .card01_content, .card02_content {
     -webkit-box-orient: vertical;
